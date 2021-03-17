@@ -4,6 +4,8 @@ from .models import Note
 from . import db
 import json
 
+# Create Blueprint for project 
+
 views = Blueprint('views', __name__)
 
 
