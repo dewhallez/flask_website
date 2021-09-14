@@ -1,4 +1,4 @@
-Flask web note app, code along with Tech with Tim on Youtube.
+Web Note App created with Flask and Python.
 
 
 Requirements:
