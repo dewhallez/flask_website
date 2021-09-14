@@ -4,10 +4,13 @@ from .models import Note
 from . import db
 import json
 
+
 # Create Blueprint for project 
 
 views = Blueprint('views', __name__)
 
+
+# main note route and login confirmation
 
 @views.route('/', methods=['GET', 'POST'])
 @login_required
@@ -25,6 +28,7 @@ def home():
 
     return render_template("home.html", user=current_user)
 
+# Delete route 
 
 @views.route('/delete-note', methods=['POST'])
 def delete_note():
